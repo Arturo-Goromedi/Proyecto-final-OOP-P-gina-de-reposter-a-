@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+    background-color: pink;}
+h1 {
+    color: maroon;
+    text-align: center;
+    font-size: 50px;
+    border-style: double;
+    border-width: 5px;
+    margin-left: 350px;
+    margin-right: 350px;}
+h3 {
+    color: maroon;
+    text-align: center;}
+h1 {
+    color: maroon;
+    text-align: center;}
+p {
+    color: maroon;
+    text-align: center;
+    font-size: 25px;}
+p2 {   
+    color:maroon;
+    font-size: 15px;}
+
+    </style>
+
+<body>
+    <h1>Cheesecake.</h1>
+    <h3>By Estefanía M. Gorocica Medina.</h3>
+
+    <center><img src="https://cdn.kiwilimon.com/recetaimagen/3037/27155.jpg" alt="Flan" width="300" height="300">
+    </img></center>
+    <p id="Flan"></p>
+<!--Tabla de ingredientes-->
+<center><div class="col-sm-6">
+    <div id="tabla-clasificacion">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ingrediente.</th>
+            <th>Cantidad.</th>
+            <th>Unidad.</th>
+          </tr>
+        </thead>
+        <tbody id="IngredientesCheesecake">
+          
+        </tbody>
+      </table>
+    </div>  
+  </div></center>
+  <!--Aquí termina la tabla de ingredientes-->
+  <!--Este botón sirve para regresar al menú principal-->  
+    <center><button onclick="VolverMenu()">Volverl a la página principal.</button></center>
+    <!--Los siguientes scripts sirven para crear una conexión con diferentes archivos-->
+    <script src="IngredientesReceta.js"></script>
+    <script src="ImprimirObjeto.js"></script>
+    <script src="Redirecciones.js"></script>
+
+    <script>
+
+        //Aquí se está llamando a la función que imprimirá los ingredientes en forma de tabla
+        printIngCheesecake(cheesecake);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+    background-color: pink;}
+h1 {
+    color: maroon;
+    text-align: center;
+    font-size: 50px;
+    border-style: double;
+    border-width: 5px;
+    margin-left: 350px;
+    margin-right: 350px;}
+h3 {
+    color: maroon;
+    text-align: center;}
+h1 {
+    color: maroon;
+    text-align: center;}
+p {
+    color: maroon;
+    text-align: center;
+    font-size: 25px;}
+p2 {   
+    color:maroon;
+    font-size: 15px;}
+
+    </style>
+
+<body>
+    <h1>Flan casero.</h1>
+    <h3>By Estefanía M. Gorocica Medina.</h3>
+
+    <center><img src="https://scontent.fmid3-1.fna.fbcdn.net/v/t1.0-9/93828353_3205467986130681_5912493898554408960_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_eui2=AeFvjBz9zPkXfq6HbXRtUN9dbyYwmo7Yf2RvJjCajth_ZGPXqoT-uZEGE5vwkxYLBV2mSGmDp1Bc1MbH2OjYF-Vx&_nc_ohc=kL8viPIIHgEAX8P73ur&_nc_ht=scontent.fmid3-1.fna&oh=97e5c96b2f681a1dc9511ff90747da0e&oe=5EEE3816" alt="Flan" width="300" height="300">
+    </img></center>
+    <p id="Flan"></p>
+<!--Tabla de ingredientes-->
+<center><div class="col-sm-6">
+    <div id="tabla-clasificacion">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ingrediente.</th>
+            <th>Cantidad.</th>
+            <th>Unidad.</th>
+          </tr>
+        </thead>
+        <tbody id="IngredientesFlan">
+          
+        </tbody>
+      </table>
+    </div>  
+  </div></center>
+  <!--Aquí termina la tabla de ingredientes-->
+  <!--Este botón sirve para regresar al menú principal-->  
+    <center><button onclick="VolverMenu()">Volverl a la página principal.</button></center>
+    <!--Los siguientes scripts sirven para crear una conexión con diferentes archivos-->
+    <script src="IngredientesReceta.js"></script>
+    <script src="ImprimirObjeto.js"></script>
+    <script src="Redirecciones.js"></script>
+
+    <script>
+
+        printIngFlan(flan);
+    </script>
+
+</body>
+</html>
